@@ -1,0 +1,17 @@
+.img-fondo{
+    width: 100%;
+    height: 36em;
+    background-color: blueviolet;
+    background-image: url("../../Images/pexels-hector-perez-1148818-5606491.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.btn-home{
+    position: absolute;
+    top: 85%;
+    background-color: #F2CBBD;
+    color:#A65B4B;
+    padding-left: 5em;
+    padding-right: 5em;
+}

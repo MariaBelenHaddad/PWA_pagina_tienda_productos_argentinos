@@ -1,0 +1,20 @@
+.bg-blue{
+    background-color: #A65B4B;
+}
+.nav-list{
+    list-style: none;
+}
+.w-text-title{
+    font-size: 2em;
+    color: #F2CBBD;
+}
+.w-text-title:hover{
+    color:white;
+}
+.w-text{
+    font-size: 1em;
+    color: #F2CBBD;
+}
+.w-text:hover{
+    color:white;
+}

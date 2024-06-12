@@ -1,0 +1,36 @@
+.div-footer{
+    background-color: #733B36;
+}
+.f-text-title-h2{
+    font-size: 2.5em;
+    color: #F2CBBD;
+}
+.f-text-title{
+    font-size: 2em;
+    color: #F2CBBD;
+}
+.btn-input{
+    background-color: white;
+    width: 24em;
+}
+.btn-input:hover{
+    background-color: white;
+}
+.btn-input:active{
+    background-color: white;
+}
+.f-text-title{
+    font-size: 1.4em;
+    color: #F2CBBD;
+}
+.f-text{
+    font-size: 1em;
+    color: #F2CBBD;
+}
+.f-link{
+    font-size: 1em;
+    color: #F2CBBD;
+}
+.f-link:hover{
+    color:white;
+}
