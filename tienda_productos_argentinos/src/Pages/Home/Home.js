@@ -5,13 +5,17 @@ import SectionDestaques from "../../Components/SectionDestaques/SectionDestaques
 import Footer from "../../Components/Footer/Footer.js"
 import Button from "../../Components/Button/Button.js";
 
+
 function Home() {
+
     return (
       <div className="Home">
         <Header/>
         <Navbar/>
-        <div>
-            <div className="img-fondo"><button className="btn d-block my-2 btn-home"><a>Comprar ahora</a></button></div>
+        <div className="img-fondo d-flex flex-row justify-content-center align-items-end"> 
+          <div className="d-flex flex-column align-items-center">
+            <h3 className="title-yellow">envíos gratis para compras de más de 25€</h3>
+          <Button className="btn-home" texto="Comprar ahora" url="/products"/></div>
         </div>
         <SectionDestaques/>
         <Footer/>

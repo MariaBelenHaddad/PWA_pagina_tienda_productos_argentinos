@@ -3,5 +3,5 @@
 }
 .display-cards{
     flex-wrap: wrap;
-    gap:2px
+    gap:1.2em
 }

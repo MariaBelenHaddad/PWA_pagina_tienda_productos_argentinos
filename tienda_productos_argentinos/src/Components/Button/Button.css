@@ -7,3 +7,14 @@
     background-color: #BF785E;
     color: white;
 }
+.react-link{
+    list-style: none;
+    text-decoration: none;
+    color:#F2CBBD
+}
+.react-link:active{
+    color:white
+}
+.react-link:hover{
+    color:white
+}

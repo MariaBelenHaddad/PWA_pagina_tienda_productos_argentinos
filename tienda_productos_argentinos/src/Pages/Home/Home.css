@@ -1,17 +1,29 @@
 .img-fondo{
     width: 100%;
     height: 36em;
-    background-color: blueviolet;
+    background-color: yellowgreen;
     background-image: url("../../Images/pexels-hector-perez-1148818-5606491.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
+    position: relative;
+    padding-bottom: 5%;
+}
+.title-yellow{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 4em;
+    color: white;
 }
 .btn-home{
-    position: absolute;
-    top: 85%;
-    background-color: #F2CBBD;
-    color:#A65B4B;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color:#733B36; 
+    color:#733B36;
     padding-left: 5em;
     padding-right: 5em;
+
+}
+.btn-home:hover{
+    background-color: #F2CBBD;
+    color:#733B36;
 }

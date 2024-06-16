@@ -1,8 +1,23 @@
 .card-product{
-    width: 20em;
-    height: 25em;
+    width: 20rem;
+    height: 25rem;
     background-color: rgb(233, 205, 205);
+}
+.product-img{
+    background-color: white;
+    min-width: 80%;
+    min-height: 70%;
 }
 .c-text{
     color: #733B36;
+}
+.btn-cart{
+    color: #733B36;
+    border-color: #733B36;
+    background-color: rgb(233, 205, 205) ;
+    width: 70%;
+}
+.img{
+    max-height: 100%;  
+    max-width: 100%;  
 }

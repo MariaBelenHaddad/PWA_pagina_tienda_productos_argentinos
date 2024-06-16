@@ -1,13 +1,20 @@
-.bg-blue{
+.bg-brown{
     background-color: #A65B4B;
+}
+.nav-item.nav-list{
+    list-style: none;
 }
 .react-link{
     list-style: none;
     text-decoration: none;
 }
+.nav-link.w-text-title{
+    text-decoration: none;
+}
 .nav-link.w-text-title:active{
     list-style: none;
     color:white;
+    text-decoration: none;
 }
 .w-text-title{
     font-size: 2em;

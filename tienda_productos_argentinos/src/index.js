@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from '../src/Pages/Home/Home.js';
 import PageProducts from './Pages/PageProducts/PageProducts.js';
+
 import{BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

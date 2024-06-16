@@ -1,0 +1,13 @@
+.btn-home{
+    position: absolute;
+    top: 85%;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-color:#733B36; 
+    color:#733B36;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.btn-home:hover{
+    background-color: #F2CBBD;
+    color:#733B36;
+}

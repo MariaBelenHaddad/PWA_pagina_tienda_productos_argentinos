@@ -1,0 +1,26 @@
+.form-switch{
+    color: #F2CBBD;
+    width: fit-content;
+    padding: 0.5rem 3rem 0.5rem 3rem;
+    margin-bottom: 0.5rem;
+    text-wrap: nowrap;
+}
+.form-check-input{
+    background-color: #BF785E;
+}
+.form-check-input:checked{
+    background-color: #F2CBBD;
+}
+.form-check-label{
+    background-color: #A65B4B;
+    font-size: 1em;
+    color: #F2CBBD;
+    width: fit-content;
+    padding-left: 0.5rem;
+}
+.form-check-label:hover{
+    color:white;
+}
+.form-check-input{
+    color: white;
+}
