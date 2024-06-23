@@ -20,6 +20,9 @@ router.get("/products/search", itemsController.getByCategory);
 //POST - New product
 router.post("/products/new", itemsController.newItem);
 
+//POST - Suscribe to newsletter
+router.post("/sendEmail", itemsController.newEmail);
+
 //PATCH - Update product
 router.patch("/products/:productId", itemsController.updateItem);
 

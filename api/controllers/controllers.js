@@ -94,6 +94,22 @@ export class itemsController {
         products.push(newItem);*/   
     };
 
+    //POST - Suscribe to newsletter (Ingreso por endpoint "/sendEmail") 
+    static async newEmail (req,res) {
+        const newEmail = req.body; 
+            
+            const newItem = await ItemsModel.newEmail(newEmail);
+            
+            newItem
+            ? 
+            res
+            .status(201)
+            .json({info: {status:201, message: "Email suscribed"}})
+            : res
+            .status(500)
+            .json({ info: {status:500, message: "Internal Server Error"}})
+    };
+
     //PATCH - Update product (Ingreso por endpoint "/products/:productId")
     static async updateItem (req,res) {
         const { productId } = req.params;

@@ -2,211 +2,211 @@
 [
     {
         "productName": "Playadito 1kg",
-        "stock": 25,
         "price": 10.00,
+        "stock": 25,
         "category":"yerba mate",
         "image": "https://m.media-amazon.com/images/I/51eDQeFIKPL._AC_SX679_.jpg"
     },
     { 
         "productName": "Playadito 500g",
-        "stock": 25,
         "price": 6.00,
+        "stock": 25,
         "category":"yerba mate",
         "image": "https://jumboargentina.vtexassets.com/arquivos/ids/608964-800-auto?v=637388478160700000&width=800&height=auto&aspect=true"
     },
     { 
         "productName": "Cruz de Malta 1kg",
-        "stock": 10,
         "price": 9.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuXzJcDf-zYMrM0fXLJya-absTPCMEuIDdAw&s"
     },
     { 
         "productName": "Mañanita 1kg",
-        "stock": 10,
         "price": 9.50,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/47617629/resize/610/610?1712928234"
     },
     { 
         "productName": "Taragui 1kg",
-        "stock": 10,
         "price": 8.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://d3gr7hv60ouvr1.cloudfront.net/CACHE/images/products/412757c430034ffa806348a2c497dc8c/b87727b46e81d1dddab532d5e88162be.jpg"
     },
     { 
         "productName": "Taragui 500g",
-        "stock": 10,
         "price": 4.50,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://carrefourar.vtexassets.com/arquivos/ids/183597-800-450?v=637468591226530000&width=800&height=450&aspect=true"
     },
     { 
         "productName": "Rosamonte 1kg",
-        "stock": 10,
         "price": 9.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://m.media-amazon.com/images/I/81xfimsfHCL._AC_UF894,1000_QL80_.jpg"
     },
     { 
         "productName": "La Merced 500g",
-        "stock": 0,
         "price": 7.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/23797390/resize/280/280?1652301624"
     },
     { 
         "productName": "Verdeflor Hierbas Serranas 1kg",
-        "stock": 10,
         "price": 10.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/45451009/Hierbas-Serranas-1Kg-a-scaled.jpg?1707756381"
     },
     { 
         "productName": "Verdeflor Boldo 500g",
-        "stock": 10,
         "price": 6.00,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://cdn11.bigcommerce.com/s-3stx4pub31/products/580/images/1522/Verdeflor_Boldo_500__43690.1648058086.386.513.png?c=2"
     },
     { 
         "productName": "Mate cocido Playadito",
-        "stock": 10,
         "price": 3.50,
+        "stock": 10,
         "category":"yerba mate",
         "image": "https://down-br.img.susercontent.com/file/sg-11134201-22110-qzx7gyc5hmjv2b"
     },
     { 
         "productName": "Havanna 250gr",
-        "stock": 10,
         "price": 3.50,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://www.nevis.pt/wp-content/uploads/2020/03/s11623-doce-de-leite-havanna-250g.jpg"
     },
     { 
         "productName": "Havanna 450gr",
-        "stock": 10,
         "price": 6.00,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://hom.belabrasil.pt/wp-content/uploads/2023/09/doce-de-leite-havanna.jpg"
     },
     { 
         "productName": "La Serenisima Estilo Colonial 450gr",
-        "stock": 10,
         "price": 7.50,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://latinafy.com/cdn/shop/files/dulce-de-leche-ls-colonial-400-g-1_608x608.jpg?v=1684777869"
     },
     { 
         "productName": "Mardel clásico 250gr",
-        "stock": 0,
         "price": 3.50,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/45309980/x7515-10_1-dulce-de-leche-clasico-mardel-250g-europa__1_.jpg?1707318284"
     },
     { 
         "productName": "Mardel clásico 1kg",
-        "stock": 0,
         "price": 9.00,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/45311801/817nF9NlRZL.jpg?1707321792"
     },
     { 
         "productName": "San Ignacio 450gr",
-        "stock": 0,
         "price": 6.00,
+        "stock": 10,
         "category":"dulce de leche",
         "image": "https://www.deliargentina.com/image/catalog/product/alimentacion/dulce-de-leche-san-ignacio-argentino/dulce-de-leche-san-ignacio-argentino.jpg"
     },
     { 
         "productName": "Havanna Chocolate x 6",
-        "stock": 10,
         "price": 12.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://remembrstore.com/cdn/shop/files/b53a0480c71cd720ab3c9d07dded80eb_e94eb938-17ce-472d-8475-b04739457352.jpg?v=1699647760"
     },
     { 
         "productName": "Havanna Nuez x 6",
-        "stock": 10,
         "price": 12.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://un-mate.eu/wp-content/uploads/2023/06/5980633e4e22b60a76fb8f6a22a1.jpeg"
     },
     { 
         "productName": "Havanna Chocolate x 12",
-        "stock": 10,
         "price": 22.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/47156027/HAVANNAALFAJORMIXTOX12U_306gr_1_500x.jpeg?1711736025"
     },
     { 
         "productName": "Havanna Mixto x 6",
-        "stock": 10,
         "price": 12.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://tienda.havanna.com.es/wp-content/uploads/2020/10/mixto-1.jpg"
     },
     { 
         "productName": "Havannets Havanna x 12",
-        "stock": 10,
         "price": 22.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://havannausa.com/wp-content/uploads/2019/12/1223.jpg"
     },
     { 
         "productName": "Alfajor Jorgito",
-        "stock": 10,
         "price": 3.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://cdn11.bigcommerce.com/s-3stx4pub31/images/stencil/1280x1280/products/620/3288/jorgito_blaanco__53943.1657344861.jpg?c=2"
     },
     { 
         "productName": "Guaymallén dulce de leche",
-        "stock": 10,
         "price": 2.50,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://i.ebayimg.com/images/g/lKIAAOSw8Chhwhl8/s-l1200.jpg"
     },
     { 
         "productName": "Alfajores Jorgito x 6",
-        "stock": 10,
         "price": 7.00,
+        "stock": 10,
         "category":"alfajores",
         "image": "https://www.zanettigolosinas.com.ar/datos/uploads/mod_catalogo/32431/d-nq-np-812398-mla41483816932-042020-o-61fd733f6949e.webp"
     },
     { 
         "productName": "Chocolinas 150gr",
-        "stock": 10,
         "price": 2.50,
+        "stock": 10,
         "category":"galletitas",
         "image": "https://sgfm.elcorteingles.es/SGFM/dctm/MEDIA03/202307/14/05220627503004____1__600x600.jpg"
     },
     { 
         "productName": "Rumba 108gr",
-        "stock": 10,
         "price": 2.00,
+        "stock": 10,
         "category":"galletitas",
         "image": "https://m.media-amazon.com/images/I/517DuMeZ+AL.jpg"
     },
     { 
         "productName": "Biscochitos Don Satur salados 200gr",
-        "stock": 10,
         "price": 3.50,
+        "stock": 10,
         "category":"galletitas",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcA58Xxkgfh4r8Aj9DA8j1LLk6gXHYwdCkAQ&s"
     },
     { 
         "productName": "Biscochitos Don Satur dulces 200gr",
-        "stock": 10,
         "price": 3.50,
+        "stock": 10,
         "category":"galletitas",
         "image": "https://i0.wp.com/pequena-sudamerica.eu/wp-content/uploads/2021/03/donsaturbizcochodulce200g.png?fit=1000%2C1000&ssl=1"
     },
     { 
         "productName": "Biscochitos Don Satur negrito 200gr",
-        "stock": 10,
         "price": 3.50,
+        "stock": 10,
         "category":"galletitas",
         "image": "https://cdnx.jumpseller.com/la-pulperia/image/47616764/2141430_f__11160.1605634719.1280.1280__98108.jpg?1712925135"
     }

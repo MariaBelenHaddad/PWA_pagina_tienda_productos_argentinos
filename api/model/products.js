@@ -36,6 +36,14 @@ export class ItemsModel {
         return result ? result : null;
     }
 
+    //POST - Suscribe to newsletter
+    static async newEmail(email){
+        const [result, _info] = await db.query(`INSERT INTO newsletter (email) VALUES (?)`,
+            [email]
+        );
+        return result ? result : null;
+    }
+
     //PATCH - Update product (partial update of an existing product)
     static async updateById(productId, partialItem){
         let partialQuery = "";
