@@ -9,13 +9,13 @@ import { itemsController } from "../controllers/controllers.js";
 router.get("/products", itemsController.getAll);
 
 //GET - Health check
-router.get("/health", itemsController.healthCheck)
+router.get("/health", itemsController.healthCheck);
 
 //GET - Get by Id
-router.get("/products/search/:productId", itemsController.getById)
+router.get("/products/search/:productId", itemsController.getById);
 
 //GET - Get by Category
-router.get("/products/search", itemsController.getByCategory)
+router.get("/products/search", itemsController.getByCategory);
 
 //POST - New product
 router.post("/products/new", itemsController.newItem);
@@ -24,4 +24,4 @@ router.post("/products/new", itemsController.newItem);
 router.patch("/products/:productId", itemsController.updateItem);
 
 //DELETE - Delete product
-router.delete("/products/:productId", itemsController.deleteById)
+router.delete("/products/:productId", itemsController.deleteById);

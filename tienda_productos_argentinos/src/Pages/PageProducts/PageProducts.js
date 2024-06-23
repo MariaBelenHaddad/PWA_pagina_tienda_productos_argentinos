@@ -2,7 +2,6 @@ import "./PageProducts.css"
 import Header from "../../Components/Header/Header.js"
 import Footer from "../../Components/Footer/Footer.js"
 import SectionProducts from "../../Components/SectionProducts/SectionProducts.js";
-import NavbarProducts from "../../Components/NavbarProducts/NavbarProducts.js";
 
 function PageProducts() {
     return (

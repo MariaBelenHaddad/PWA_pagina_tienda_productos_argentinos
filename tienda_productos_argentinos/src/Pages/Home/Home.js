@@ -16,7 +16,9 @@ function Home() {
           <div className="d-flex flex-column align-items-center">
             <h3 className="title-yellow">envíos gratis para compras de más de 25€</h3>
           <Button className="btn-home" texto="Comprar ahora" url="/products"/></div>
+          <Button className="btn-home" texto="Admin" url="/admin"/>
         </div>
+        <p>Hola texto</p>
         <SectionDestaques/>
         <Footer/>
       </div>

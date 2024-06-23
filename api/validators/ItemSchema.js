@@ -2,7 +2,7 @@ import z from "zod";
 //const currentYear = new Date().getFullYear();
 
 const itemSchema = z.object({
-    id: z.number().min(4),
+    //id: z.number().min(4),
     productName: z.string({
         required_error: "Field is required",
     })

@@ -22,7 +22,7 @@ function Footer() {
             <h2 className="f-text-title">Suscríbete aquí:</h2>
             <div className="d-flex flex-column"> 
             <form class="d-flex flex-row" role="search">
-                <input class="btn m-2 btn-input" type="email" placeholder="Ingrese su email" aria-label="email"/>
+                <input className="form-control" type="email" placeholder="Ingrese su email" aria-label="email"/>
                 <Button texto={texto} type="submit"/>
             </form></div>   
         </div></div>

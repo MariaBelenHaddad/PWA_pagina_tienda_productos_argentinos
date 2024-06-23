@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Home from '../src/Pages/Home/Home.js';
 import PageProducts from './Pages/PageProducts/PageProducts.js';
+import Admin from './Pages/Admin/Admin.js';
+import NewProduct from './Pages/NewProduct/NewProduct.js';
 
 import{BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
@@ -13,6 +15,8 @@ root.render(
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/products' element={<PageProducts/>}/>
+          <Route path='/admin' element={<Admin/>}/>
+          <Route path='/newProduct' element={<NewProduct/>}/>
         </Routes>
       </Router>
   </React.StrictMode>

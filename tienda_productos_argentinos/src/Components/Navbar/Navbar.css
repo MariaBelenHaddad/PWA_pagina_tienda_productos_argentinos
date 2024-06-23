@@ -1,4 +1,4 @@
-.bg-blue{
+.background{
     background-color: #A65B4B;
 }
 .react-link{
@@ -13,8 +13,8 @@
     font-size: 2em;
     color: #F2CBBD;
 }
-.w-text-title:hover{
-    color:white;
+.nav-item.nav-list{
+    list-style: none;
 }
 .w-text{
     font-size: 1em;
@@ -23,3 +23,4 @@
 .w-text:hover{
     color:white;
 }
+

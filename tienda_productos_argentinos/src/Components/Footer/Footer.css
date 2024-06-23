@@ -9,15 +9,10 @@
     font-size: 2em;
     color: #F2CBBD;
 }
-.btn-input{
+.form-control{
     background-color: white;
     width: 24em;
-}
-.btn-input:hover{
-    background-color: white;
-}
-.btn-input:active{
-    background-color: white;
+    margin-right: 2em;
 }
 .f-text-title{
     font-size: 1.4em;

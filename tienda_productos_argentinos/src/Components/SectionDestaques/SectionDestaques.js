@@ -1,63 +1,61 @@
-import {Link} from 'react-router-dom';
+import {useState,useEffect} from 'react';
 import "./SectionDestaques.css"
 import Card from "../../Components/Card/Card.js";
 import Button from "../../Components/Button/Button.js"
 
 function SectionDestaques() {
 
-    let listProducts = [
-        { 
-            id : 5013,
-            productName: "Havanna 250gr",
-            stock: 0,
-            price: 3.50,
-            category:"dulce de leche",
-            image:"https://www.nevis.pt/wp-content/uploads/2020/03/s11623-doce-de-leite-havanna-250g.jpg"
-        },{ 
-            id : 5003,
-            productName: "Mañanita 1kg",
-            stock: 0,
-            price: 9.50,
-        category:"yerba mate",
-            image: "https://m.media-amazon.com/images/I/51X5hHLZnhL._AC_.jpg"
-        },{
-            id : 5000,
-            productName: "Playadito 1kg",
-            stock: 25,
-            price: 10.00,
-            category:"yerba mate",
-            image: "https://m.media-amazon.com/images/I/51eDQeFIKPL._AC_SX679_.jpg"
-        },{ 
-            "id" : 5031,
-            "productName": "Biscochitos Don Satur dulces 200gr",
-            "stock": 0,
-            "price": 3.50,
-            "category":"galletitas",
-            "image": "https://www.cebate.pt/494-large_default/bizcochos-dulces-don-satur-200gr.jpg"
-        }
-    ];
+    let [listProducts,setListProducts]=useState([]);
+    let [idDestacados,setIdDestacados]=useState([]); 
+    let [bestProducts,setBestProducts]=useState([]); 
+    let destacados = []
+
+    const showProducts=async()=>{ 
+        let info= await fetch("http://localhost:4000/products")
+                .then((resp)=>{return resp.json()})
+                //.then((data)=>{return data})
+                .catch((error)=>{console.log(error)})//Acción si no logra obtener la info
+
+        setListProducts(info.data)
+        console.log(listProducts)
+        //setBestProducts(info.data[0], info.data[1], info.data[2], info.data[3])  
+        //console.log("BESt products")
+        //console.log(bestProducts)     
+    };
+    
+ 
+        
+    
+    
+    useEffect(()=>{
+        showProducts()  
+    },[]);
 
     let texto = "Ver todos los productos"
     
     return (
     <section className="d-flex flex-column align-items-center my-4">
         <h2 className="title">Productos en destaque</h2>
-        <div className="d-flex flex-row justify-content-between display-cards my-2">   
+        <div className="d-flex flex-row justify-content-center display-cards m-2 gap-2">  
+        
+   
             {   
-            listProducts.length !== 0 ?
-                listProducts.map((item)=>{
-                    return <Card key={item.id} image={item.image} productName={item.productName} price={item.price}/>
-                })
+            bestProducts.length !== 0 ?
+            bestProducts.map((item)=>{
+                return <Card key={item.id} image={item.image} productName={item.productName} price={item.price}/>
+            })
+                
             :
                 <div class="alert alert-success" role="alert">
-                    Sorry! There are no characters width all those properties.
+                    Sorry! There are no products.
                 </div>
             }
         </div>
         <Button texto={texto} url="/products"/>
 
     </section>
-    );
-  }
+);
+
+}
   
   export default SectionDestaques;

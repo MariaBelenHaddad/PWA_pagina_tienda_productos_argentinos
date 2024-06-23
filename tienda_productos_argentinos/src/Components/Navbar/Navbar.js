@@ -3,7 +3,7 @@ import "./Navbar.css"
 
 function Navbar() {
     return (
-    <nav className="p-4 bg-blue">
+    <nav className="p-4 background">
             <ul className="d-flex flex-row justify-content-between align-items-center">
                 <Link to={"/"} className='react-link'>
                 <li className="nav-item nav-list"><a className="nav-link w-text-title" href="">La Paulina</a></li>

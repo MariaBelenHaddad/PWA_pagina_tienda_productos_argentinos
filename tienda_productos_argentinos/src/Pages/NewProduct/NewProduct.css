@@ -1,0 +1,26 @@
+.bg-brown{
+    background-color: #A65B4B;
+    margin-bottom: 10%;
+}
+.bg-white{
+    background-color: white;
+    margin-bottom: 2%;
+}
+.btn-nuevo-producto{
+    background-color: #D3E7DD;
+    color: black;
+    margin-top: 1%;
+}
+.btn.btn-nuevo-producto:active{
+    background-color: #D3E7DD;
+    color: black;
+    margin-top: 1%;
+}
+.div-footer{
+    background-color: #733B36;
+    width: 100%;
+}
+.alert-success{
+    width: 300px;
+}
+

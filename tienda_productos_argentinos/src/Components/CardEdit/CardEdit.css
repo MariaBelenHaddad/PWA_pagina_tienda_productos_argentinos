@@ -1,0 +1,43 @@
+.card-product{
+    width: 20rem;
+    height: 30rem;
+    background-color: rgb(233, 205, 205);
+}
+.product-img{
+    background-color: white;
+    width: 80%;
+    min-height: 70%;
+}
+.c-text{
+    color: #733B36;
+}
+.btn-cart{
+    color: #733B36;
+    border-color: #733B36;
+    background-color: rgb(233, 205, 205) ;
+    width: 25;
+}
+.img{
+    max-height: 100%;  
+    max-width: 100%;  
+}
+
+/* EDIT CARD */
+.edit-card{
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+}
+.btn-x{
+    background-color: grey;
+    color:white ;
+}
+.btn-card{
+    background-color:#A65B4B;
+    font-size: 1.2em;
+    color: #F2CBBD;
+}
+.btn-card:hover{
+    background-color: #BF785E;
+    color: white;
+}
