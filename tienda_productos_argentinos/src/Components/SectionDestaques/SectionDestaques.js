@@ -6,9 +6,7 @@ import Button from "../../Components/Button/Button.js"
 function SectionDestaques() {
 
     let [listProducts,setListProducts]=useState([]);
-    let [idDestacados,setIdDestacados]=useState([]); 
     let [bestProducts,setBestProducts]=useState([]); 
-    let destacados = []
 
     const showProducts=async()=>{ 
         let info= await fetch("http://localhost:4000/products")
@@ -16,16 +14,9 @@ function SectionDestaques() {
                 //.then((data)=>{return data})
                 .catch((error)=>{console.log(error)})//Acción si no logra obtener la info
 
-        setListProducts(info.data)
-        console.log(listProducts)
-        //setBestProducts(info.data[0], info.data[1], info.data[2], info.data[3])  
-        //console.log("BESt products")
-        //console.log(bestProducts)     
+        setListProducts(info.data) 
+        setBestProducts([info.data[0], info.data[1], info.data[2], info.data[3]])
     };
-    
- 
-        
-    
     
     useEffect(()=>{
         showProducts()  
@@ -39,17 +30,17 @@ function SectionDestaques() {
         <div className="d-flex flex-row justify-content-center display-cards m-2 gap-2">  
         
    
-            {   
-            bestProducts.length !== 0 ?
-            bestProducts.map((item)=>{
-                return <Card key={item.id} image={item.image} productName={item.productName} price={item.price}/>
-            })
-                
+        {  
+            listProducts.length !== 0 ?
+                bestProducts.map((item)=>{
+                    return <Card key={item.id} image={item.image} productName={item.productName} price={item.price}/>
+                })
             :
                 <div class="alert alert-success" role="alert">
                     Sorry! There are no products.
                 </div>
             }
+
         </div>
         <Button texto={texto} url="/products"/>
 

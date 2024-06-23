@@ -1,4 +1,4 @@
-.div-footer{
+.footer{
     background-color: #733B36;
 }
 .f-text-title-h2{
@@ -28,4 +28,29 @@
 }
 .f-link:hover{
     color:white;
+}
+.form-suscribe{
+    display: flex;
+    flex-direction: column;
+}
+.section-suscribe{
+    display:none;
+}
+@media(max-width:1300px){
+    .div-footer{
+        flex-wrap: wrap;
+    }
+}
+@media(min-width:1200px){
+    .form-suscribe{
+        flex-direction: row;
+    }
+}
+@media(min-width:550px){
+    .section-suscribe{
+        display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
 }

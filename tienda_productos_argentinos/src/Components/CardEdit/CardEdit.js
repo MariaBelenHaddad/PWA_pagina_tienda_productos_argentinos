@@ -53,7 +53,8 @@ const ocultar=()=>{
     //console.log("Values")
     //console.log(values)
 
-    editItem(productId, values)
+    editItem(productId, values);
+    event.target.reset()
 };
 
 const editItem=async(productId, values)=>{ 
@@ -65,19 +66,19 @@ const editItem=async(productId, values)=>{
     .then((resp)=>{return resp.json()})
     .catch((error)=>{console.log(error)}) 
   console.log(info);
-  /*if(info.info.status === 200){
+  if(info.info.status === 200){
     setSuccess(true)
     const deleteMessage = setTimeout(() => {
       setSuccess(false);
       showProducts();
     }, 3000);
-      }*/
-  /*if(info.info.status === 422 ){
+      }
+  if(info.info.status === 422 ){
     setValidationError(true)
     const deleteMessage = setTimeout(() => {
       setValidationError(false);
     }, 3000);
-  }*/
+  }
 };
 
 

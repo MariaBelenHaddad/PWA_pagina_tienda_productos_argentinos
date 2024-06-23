@@ -11,7 +11,7 @@ function NewProduct() {
   const goToCreate=(event)=>{
     event.preventDefault();
     //console.log(event.target)
-    //console.log("Estoy en la función handleCreate")
+    //console.log("Estoy en la función goToCreate")
 
     let productName = event.target.productName.value
     let price = event.target.price.valueAsNumber
@@ -21,11 +21,12 @@ function NewProduct() {
 
     let values = {productName, price, stock, category, image}
     //console.log(values)
-    createNewItem(values)
+    createNewItem(values);
+    event.target.reset()
 };
 
 const createNewItem=async(values)=>{ 
-    
+
     let info= await fetch("http://localhost:4000/products/new", 
         {
         method: 'POST', 
@@ -95,7 +96,7 @@ const createNewItem=async(values)=>{
 
       </form>
       </div>
-      
+
         {/*Mensajes de alerta*/}
         { success === true && <p class="alert alert-success" role="alert">Ingresó un nuevo producto con éxito</p> }
         { validationError === true && <p class="alert alert-warning" role="alert">Errores de validación, ingrese los datos correctamente</p>} 

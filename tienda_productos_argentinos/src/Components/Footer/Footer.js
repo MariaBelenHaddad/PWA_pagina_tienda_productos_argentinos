@@ -4,8 +4,8 @@ import "./Footer.css"
 function Footer() {
     let texto = "Unirse"
     return (
-      <footer className="div-footer"> 
-        <div className="d-flex flex-row justify-content-center py-5">
+      <footer className="footer"> 
+        <div className="d-flex flex-row justify-content-center py-5 div-footer">
         <ul className="d-flex flex-column justify-content-end align-items-start px-5">
           <h2 className="f-text-title-h2">La Paulina</h2>
             <li className="nav-item nav-list"><a className="nav-link f-link" aria-current="page" href="">Tienda</a></li>
@@ -18,10 +18,10 @@ function Footer() {
             <li className="nav-item nav-list f-text">Av. Sarmiento 980</li>
             <li className="nav-item nav-list f-text">Salta, Argentina CP 4400</li>          
         </ul>
-        <div className="d-flex flex-column justify-content-center align-items-start px-5">
+        <div className="section-suscribe px-5">
             <h2 className="f-text-title">Suscríbete aquí:</h2>
             <div className="d-flex flex-column"> 
-            <form class="d-flex flex-row" role="search">
+            <form class="form-suscribe" role="search">
                 <input className="form-control" type="email" placeholder="Ingrese su email" aria-label="email"/>
                 <Button texto={texto} type="submit"/>
             </form></div>   

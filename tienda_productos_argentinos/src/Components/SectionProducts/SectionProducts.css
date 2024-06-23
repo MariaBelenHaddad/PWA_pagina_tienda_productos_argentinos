@@ -8,3 +8,23 @@
     flex-wrap: wrap;
     gap:1.2em
 }
+.btn-categories{
+    background-color: #733B36;
+    color:white;
+}
+.dropdown-categories{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+@media(max-width: 660px){
+    .dropdown-categories{
+        display:none;
+        }
+    }
+@media(min-width: 660px){
+    .dropdown{
+        display:none;
+        }
+    }

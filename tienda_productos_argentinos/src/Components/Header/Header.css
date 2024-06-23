@@ -6,3 +6,8 @@
     font-size: 1.2em;
     color: #A65B4B;
 }
+@media(max-width: 500px){
+    .form-control.me-2{
+        width: 50% ;
+        }
+    }
