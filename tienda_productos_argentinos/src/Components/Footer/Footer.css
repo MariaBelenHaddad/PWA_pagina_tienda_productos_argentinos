@@ -32,9 +32,14 @@
 .form-suscribe{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .section-suscribe{
     display:none;
+}
+.btn-card{
+    width: fit-content;
 }
 @media(max-width:1300px){
     .div-footer{

@@ -1,5 +1,4 @@
 import {useState} from 'react';
-import Button from "../Button/Button";
 import "./Footer.css"
 
 function Footer() {
@@ -9,19 +8,20 @@ function Footer() {
 
   const goToSendEmail=(event)=>{
     event.preventDefault();
-    //console.log(event.target)
-    let email = event.target.email.value
-    suscribeToNewsletter(email);
+    //console.log(event.target.email.value)
+    let suscripcion = event.target.email.value
+    console.log= suscripcion
+    suscribeToNewsletter(suscripcion);
     event.target.reset()
 };
 
-const suscribeToNewsletter=async(email)=>{ 
+const suscribeToNewsletter=async(suscripcion)=>{ 
 
-  let info= await fetch("http://localhost:4000/products/suscribe", 
+  let info= await fetch("http://localhost:4000/sendEmail", 
       {
       method: 'POST', 
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(email)
+      body: JSON.stringify(suscripcion)
       })
     .then((resp)=>{return resp.json()})
     .catch((error)=>{console.log(error)}) 
@@ -32,7 +32,7 @@ const suscribeToNewsletter=async(email)=>{
           setSuccess(false);
         }, 3000);
           }
-      if(info.info.status === 422 ){
+      if(info.info.status === 500 ){
         setValidationError(true)
         const deleteMessage = setTimeout(() => {
           setValidationError(false);
@@ -60,14 +60,14 @@ const suscribeToNewsletter=async(email)=>{
 
         <div className="section-suscribe px-5">
           <h2 className="f-text-title">Suscríbete aquí:</h2>
-          <div className="d-flex flex-column"> 
-            <form class="form-suscribe" role="search" onSubmit={(event)=>goToSendEmail(event)}>
+          <div> 
+            <form className="form-suscribe" onSubmit={(event)=>goToSendEmail(event)}>
               <input id="email" className="form-control" type="email" placeholder="Ingrese su email" aria-label="email"/>
-              <Button texto="Unirse" type="submit"/>
+              <button type="submit" className="btn btn-card px-2 m-2">Unirse</button>
             </form>
             {/*Mensajes de alerta*/}
         { success === true && <p class="alert alert-success" role="alert">Se suscribió a nuestro newsletter!</p> }
-        { validationError === true && <p class="alert alert-warning" role="alert">Errores de validación, ingrese su email correctamente</p>} 
+        { validationError === true && <p class="alert alert-warning" role="alert">Error, no se pudo suscribir</p>} 
           </div> 
         </div>
 
