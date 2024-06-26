@@ -96,19 +96,20 @@ export class itemsController {
 
     //POST - Suscribe to newsletter (Ingreso por endpoint "/sendEmail") 
     static async newEmail (req,res) {
+        //res.header("Access-Control-Allow-Origin", "http://192.168.1.6"); //"http://127.0.0.1:5500"
+        //res.header("Access-Control-Allow-Methods", "POST"); 
         const newEmail = req.body; 
-            
-            const newItem = await ItemsModel.newEmail(newEmail);
-            
-            newItem
-            ? 
-            res
-            .status(201)
-            .json({info: {status:201, message: "Email suscribed"}})
-            : res
-            .status(500)
-            .json({ info: {status:500, message: "Internal Server Error"}})
-    };
+        const newItem = await ItemsModel.newEmail(newEmail);
+        
+        newItem
+        ? 
+        res
+        .status(201)
+        .json({info: {status:201, message: "Email suscribed"}})
+        : res
+        .status(500)
+        .json({ info: {status:500, message: "Internal Server Error"}})
+};
 
     //PATCH - Update product (Ingreso por endpoint "/products/:productId")
     static async updateItem (req,res) {

@@ -8,7 +8,7 @@ const app = express();
 
 app.disable("X-Powered-By") //Desabilito este encabezado p/tener más seguridad
 app.use(express.json()); //Define que se va a transmitir info en formato json
-app.use(cors()); //Primero debo instalarlo con NPM
+app.use(cors()); //Primero debo instalarlo con NPM, esto habilita todas las peticiones
 app.use(express.urlencoded({extended:true})) 
 
 /*app.options("/", (req, res) =>{

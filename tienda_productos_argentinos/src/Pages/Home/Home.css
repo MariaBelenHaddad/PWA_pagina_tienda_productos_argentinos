@@ -32,3 +32,29 @@
     background-color: #F2CBBD;
     color:#733B36;
 }
+.p-yellow{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: #F4B743;
+    text-align: center;
+}
+.section-entregas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media(max-width:600px){
+    .section-entregas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .p-yellow{
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 1em;
+    }
+
+}

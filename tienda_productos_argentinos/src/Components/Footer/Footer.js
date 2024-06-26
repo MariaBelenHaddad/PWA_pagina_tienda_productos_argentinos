@@ -7,10 +7,10 @@ function Footer() {
   let [validationError, setValidationError] =useState(false);
 
   const goToSendEmail=(event)=>{
-    event.preventDefault();
-    //console.log(event.target.email.value)
-    let suscripcion = event.target.email.value
-    console.log= suscripcion
+    event.preventDefault(event.target);
+    //console.log(event.target.email.value);
+    let suscripcion = {email: event.target.email.value};
+    console.log(suscripcion);
     suscribeToNewsletter(suscripcion);
     event.target.reset()
 };
@@ -24,7 +24,7 @@ const suscribeToNewsletter=async(suscripcion)=>{
       body: JSON.stringify(suscripcion)
       })
     .then((resp)=>{return resp.json()})
-    .catch((error)=>{console.log(error)}) 
+    .catch((error)=>{console.log(error)}); 
   console.log(info);
       if(info.info.status === 201){
         setSuccess(true)
@@ -54,8 +54,8 @@ const suscribeToNewsletter=async(suscripcion)=>{
         <ul className="d-flex flex-column justify-content-end align-items-start px-5">
             <li className="nav-item nav-list f-text">info@lapaulina.com</li>
             <li className="nav-item nav-list f-text">Tel. 401-2354</li>
-            <li className="nav-item nav-list f-text">Av. Sarmiento 980</li>
-            <li className="nav-item nav-list f-text">Salta, Argentina CP 4400</li>          
+            <li className="nav-item nav-list f-text">Rua Carlos Mardel 980</li>
+            <li className="nav-item nav-list f-text">Lisboa, Portugal CP 1900</li>          
         </ul>
 
         <div className="section-suscribe px-5">

@@ -37,9 +37,10 @@ export class ItemsModel {
     }
 
     //POST - Suscribe to newsletter
-    static async newEmail(email){
+    static async newEmail(newEmail){
+        //console.log(email.email)
         const [result, _info] = await db.query(`INSERT INTO newsletter (email) VALUES (?)`,
-            [email]
+            [newEmail.email]
         );
         return result ? result : null;
     }
